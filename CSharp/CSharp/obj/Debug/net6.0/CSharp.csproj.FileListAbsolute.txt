@@ -1,0 +1,15 @@
+C:\Users\Arash\Developer\code-samples\CSharp\CSharp\bin\Debug\net6.0\CSharp.exe
+C:\Users\Arash\Developer\code-samples\CSharp\CSharp\bin\Debug\net6.0\CSharp.deps.json
+C:\Users\Arash\Developer\code-samples\CSharp\CSharp\bin\Debug\net6.0\CSharp.runtimeconfig.json
+C:\Users\Arash\Developer\code-samples\CSharp\CSharp\bin\Debug\net6.0\CSharp.dll
+C:\Users\Arash\Developer\code-samples\CSharp\CSharp\bin\Debug\net6.0\CSharp.pdb
+C:\Users\Arash\Developer\code-samples\CSharp\CSharp\obj\Debug\net6.0\CSharp.csproj.AssemblyReference.cache
+C:\Users\Arash\Developer\code-samples\CSharp\CSharp\obj\Debug\net6.0\CSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arash\Developer\code-samples\CSharp\CSharp\obj\Debug\net6.0\CSharp.AssemblyInfoInputs.cache
+C:\Users\Arash\Developer\code-samples\CSharp\CSharp\obj\Debug\net6.0\CSharp.AssemblyInfo.cs
+C:\Users\Arash\Developer\code-samples\CSharp\CSharp\obj\Debug\net6.0\CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Arash\Developer\code-samples\CSharp\CSharp\obj\Debug\net6.0\CSharp.dll
+C:\Users\Arash\Developer\code-samples\CSharp\CSharp\obj\Debug\net6.0\refint\CSharp.dll
+C:\Users\Arash\Developer\code-samples\CSharp\CSharp\obj\Debug\net6.0\CSharp.pdb
+C:\Users\Arash\Developer\code-samples\CSharp\CSharp\obj\Debug\net6.0\CSharp.genruntimeconfig.cache
+C:\Users\Arash\Developer\code-samples\CSharp\CSharp\obj\Debug\net6.0\ref\CSharp.dll
