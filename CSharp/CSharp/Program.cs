@@ -107,3 +107,94 @@ void AddOneRef(int[] x)
     x[0]++;
 }
 AddOneRef(x_b); // x_b is now 6
+
+///// Arrays, lists, and dictionaries
+/*
+ * Lists
+ * Dynamically-sized arrays
+ */
+List<int> list = new List<int>() { 1, 2, 3, 4, 5 };
+list.Add(6); // Add 6 to the end of the list
+list.Insert(0, 0); // Insert 0 at the beginning of the list
+list.RemoveAt(0); // Remove the first element
+list.Remove(6); // Remove the element with value 6
+list.Sort(); // Sort the list
+list.Reverse(); // Reverse the list
+list.Clear(); // Remove all elements
+list.Contains(3); // Check if the list contains 3
+list.IndexOf(3); // Get the index of 3
+Console.WriteLine(list.Count); // Get the number of elements in the list
+
+/*
+ * Arrays
+ * Fixed-sized collections of data
+ */
+int[] array = new int[5] { 1, 2, 3, 4, 5 };
+array[0] = 0; // Set the first element to 0
+Console.WriteLine(array.Length); // Get the number of elements in the array
+
+// Displaying content in lists or arrays
+// Method 1: for loop
+for (int i = 0; i < list.Count; i++)
+{
+    Console.WriteLine(list[i]);
+}
+
+// Method 2: foreach loop
+foreach (int i in list)
+{
+    Console.WriteLine(i);
+}
+
+/*
+ * Dictionaries
+ * A data type that stores values in key-value pairs
+ */
+Dictionary<string, int> dict = new Dictionary<string, int>();
+dict.Add("one", 1); // Add a key-value pair; will error if key already exists
+dict["two"] = 2; // Add a key-value pair; will overwrite if key already exists, or add if it doesn't
+dict.Remove("one"); // Remove the key-value pair with key "one"
+
+// Displaying content in dictionaries
+foreach (KeyValuePair<string, int> pair in dict)
+{
+    Console.WriteLine($"{pair.Key}: {pair.Value}");
+}
+
+// Getting keys and values separately in dictionary
+Dictionary<string, int>.KeyCollection keys = dict.Keys;
+Dictionary<string, int>.ValueCollection values = dict.Values;
+
+///// Dates
+DateTime date = DateTime.Now; // Current date and time
+DateTime specificDate = new DateTime(2020, 1, 1); // Specific date
+Console.WriteLine(date); // Display date
+Console.WriteLine(date.ToString("MM/dd/yyyy")); // Display formatted date
+
+DateTime convertedDate = Convert.ToDateTime("01/01/2020"); // Convert string to date
+
+// Date arithmetic
+DateTime oneWeekLater = date.AddDays(7); // Add 7 days
+DateTime newYears = new DateTime(date.Year, 1, 1);
+int daysToNewYears = newYears.Subtract(date).Days; // Get the number of days until New Years
+
+///// I/O
+// Reading from a file
+string[] lines = File.ReadAllLines("file.txt"); // Read all lines into an array
+string text = File.ReadAllText("file.txt"); // Read all text into a string
+
+// Read using StreamReader
+// More efficient than File.ReadAllLines and File.ReadAllText and allows for more control
+using (StreamReader sr = new StreamReader("file.txt"))
+{
+    string line;
+    while ((line = sr.ReadLine()) != null)
+    {
+        Console.WriteLine(line);
+    }
+}
+
+// Writing to a file
+// Default directory is <project directory>\bin\Debug\<.NET version>; to override, use absolute path
+File.WriteAllLines("file.txt", lines); // Write all lines from an array
+File.WriteAllText("file.txt", text); // Write all text from a string
