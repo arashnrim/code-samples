@@ -1,4 +1,6 @@
 ﻿///// String interpolation
+using System.Runtime.CompilerServices;
+
 const string word = "World";
 Console.WriteLine("Hello {0}!", word); // Using positional arguments
 Console.WriteLine($"Hello {word}!"); // Using string interpolation; note the $!
@@ -198,3 +200,16 @@ using (StreamReader sr = new StreamReader("file.txt"))
 // Default directory is <project directory>\bin\Debug\<.NET version>; to override, use absolute path
 File.WriteAllLines("file.txt", lines); // Write all lines from an array
 File.WriteAllText("file.txt", text); // Write all text from a string
+
+// Write using StreamReader
+// More efficient than File.WriteAllLines and File.WriteAllText and allows for more control
+using (StreamWriter sw = new StreamWriter("file.txt"))
+{
+    foreach (string line in lines)
+    {
+        sw.WriteLine(line);
+    }
+}
+
+//// Classes
+// Refer to ClassExample.cs for this section.
