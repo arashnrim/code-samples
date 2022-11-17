@@ -6,6 +6,11 @@ This is just a small thing done by [Arash](https://github.com/arashnrim) and [JX
 ## What you can find here!
 Currently have code samples for C# and Python. As we are doing this alongside our progress in school, this cheat sheet is nowhere near complete. 
 
+Available cheat sheets: 
+- [Python](https://github.com/arashnrim/code-samples/blob/main/Python/sample.py)
+- [C#](https://github.com/arashnrim/code-samples/blob/main/CSharp/CSharp/Program.cs)
+  - [C# Classes Example](https://github.com/arashnrim/code-samples/blob/main/CSharp/CSharp/ClassExample.cs)
+
 ## Contributing
 This project is accepting contributions! If you'd like to contribute to have a go at creating more code samples for any of the language we've already done, or perhaps even creating code samples for another programming language, by all means! We welcome your involvment. 
 
